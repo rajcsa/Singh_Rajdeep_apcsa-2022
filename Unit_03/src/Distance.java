@@ -38,6 +38,7 @@ public class Distance
 	
 	public void print()
 	{
+		System.out.println(distance);
 	}
 	
 	//complete print or the toString
