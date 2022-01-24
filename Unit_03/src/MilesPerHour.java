@@ -1,9 +1,9 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
 
-//Name -
-//Date -
-//Class -
+//Name - Rajdeep
+//Date - 1/24/2022
+//Class - AP CSA
 //Lab  -
 
 import java.util.Scanner; 
@@ -23,24 +23,31 @@ public class MilesPerHour
 
 	public MilesPerHour(int dist, int hrs, int mins)
 	{
+		setNums(dist, hrs, mins);
+		calcMPH();
 	}
 
 	public void setNums(int dist, int hrs, int mins)
 	{
+		distance = dist;
+		hours = hrs;
+		minutes = mins;
 	}
 
 	public void calcMPH()
 	{
+		mph = Math.round(distance/(hours + minutes/60));
 	}
 
 	public void print()
 	{
+		System.out.println(mph);
 	}
 	
 	//create a print or toString or both
 	
 	public String toString()
 	{
-		return "";
+		return "The MPH Speed is: " + mph;
 	}
 }
