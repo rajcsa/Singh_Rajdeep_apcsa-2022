@@ -1,7 +1,7 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
 
-//Name -
+//Name - Raj
 //Date - 
 //Class -
 //Lab  -
@@ -18,5 +18,16 @@ public class NumberVerifyRunner
 		System.out.println("5 is even :: " + NumberVerify.isEven(5));
 		
 		//add in more test cases
+		System.out.println("6 is odd :: " + NumberVerify.isOdd(6));
+		System.out.println("6 is even :: " + NumberVerify.isEven(6));
+		
+		System.out.println("7 is odd :: " + NumberVerify.isOdd(7));
+		System.out.println("7 is even :: " + NumberVerify.isEven(7));
+		
+		System.out.println("8 is odd :: " + NumberVerify.isOdd(8));
+		System.out.println("8 is even :: " + NumberVerify.isEven(8));
+		
+		System.out.println("9 is odd :: " + NumberVerify.isOdd(9));
+		System.out.println("9 is even :: " + NumberVerify.isEven(9));
 	}
 }
