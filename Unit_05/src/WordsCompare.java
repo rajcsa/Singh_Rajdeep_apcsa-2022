@@ -13,26 +13,29 @@ public class WordsCompare
 	private String wordOne, wordTwo;
    private int compare;
 
-	public WordsCompare()
-	{
-	}
-
 	public WordsCompare(String one, String two)
 	{
+		setWords(one,two);
 	}
 
 	public void setWords(String one, String two)
 	{
-
+		wordOne = one;
+		wordTwo = two;
 	}
 
-	public void compare()
+	public boolean compare()
 	{
+		if(wordOne.compareTo(wordTwo) < 0)
+			return true;
+		else 
+			return false;
+			
 	}
 
 	public String toString()
 	{
-		if(compare<0)
+		if(compare() == true)
 		{
 			return wordOne + " should be placed before " + wordTwo + "\n";
 		}
