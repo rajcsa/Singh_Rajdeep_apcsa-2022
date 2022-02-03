@@ -1,36 +1,42 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
 //Name -
-
 import static java.lang.System.*;
 
 public class LetterRemover
 {
-   private String sentence;
-   private char lookFor;
+    private String sentence;
+    private String lookFor;
+    
 
-	public LetterRemover()
-	{
-		//call set
-	}
+    public LetterRemover()
+    {
+        sentence="";//call set
+    }
 
-	//add in second constructor
-	
-	
-	public void setRemover(String s, char rem)
-	{
-		sentence = s;
-		lookFor = rem;
-	}
+    //add in second constructor
+    public LetterRemover(String s, String rem)
+    {
+        sentence = s;
+        lookFor = rem;
+    }
 
-	public String removeLetters()
-	{
-		String cleaned=sentence;
-		return cleaned;
-	}
+    public void setRemover(String s, String rem)
+    {
+        sentence = s;
+        lookFor = rem;
+    }
 
-	public String toString()
-	{
-		return sentence + " - letter to remove " + lookFor;
-	}
+    public String removeLetters()
+    {
+        String cleaned=sentence;
+        cleaned = sentence.replace(lookFor, "");
+        System.out.println(sentence + " - letter to remove: " + lookFor + " = " + cleaned);
+        return cleaned;
+    }
+
+    public String toString()
+    {
+        return sentence + " - letter to remove " + lookFor;
+    }
 }
