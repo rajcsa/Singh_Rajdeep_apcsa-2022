@@ -6,22 +6,21 @@ import static java.lang.System.*;
 public class LetterRemover
 {
     private String sentence;
-    private String lookFor;
+    private char lookFor;
     
 
     public LetterRemover()
     {
-        sentence="";//call set
+        setRemover("", 'A');
     }
 
     //add in second constructor
-    public LetterRemover(String s, String rem)
+    public LetterRemover(String s, char rem)
     {
-        sentence = s;
-        lookFor = rem;
+        setRemover(s, rem);
     }
 
-    public void setRemover(String s, String rem)
+    public void setRemover(String s, char rem)
     {
         sentence = s;
         lookFor = rem;
@@ -29,14 +28,17 @@ public class LetterRemover
 
     public String removeLetters()
     {
-        String cleaned=sentence;
-        cleaned = sentence.replace(lookFor, "");
-        System.out.println(sentence + " - letter to remove: " + lookFor + " = " + cleaned);
+    	String cleaned = "";
+        for (char c:sentence.toCharArray()) {
+        	if (c != lookFor) {
+        		cleaned += c;
+        	}
+        }
         return cleaned;
     }
 
     public String toString()
     {
-        return sentence + " - letter to remove " + lookFor;
+        return sentence + " - letter to remove " + lookFor + " = " + removeLetters();
     }
 }
