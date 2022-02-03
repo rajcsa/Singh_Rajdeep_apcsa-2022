@@ -4,11 +4,18 @@
 
 import static java.lang.System.*;
 
-public class CountPairs
+public class CountPairs // wrap this inside of a function
 {
-	public static int pairCounter( String str )
-	{ 
-		int count = 0;
-		return count;
-	}
+	String str = "blagggg";
+	int count = 0;
+
+    for (int i = 0; i < str.length(); i++){
+      char c = str.charAt(i);
+      char d = str.charAt(i+1);
+      
+      if (c == d){
+        count++;
+      }
+    }
+		System.out.println(count); //return count
 }
