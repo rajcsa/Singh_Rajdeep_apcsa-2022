@@ -4,40 +4,47 @@
 
 import static java.lang.System.*;
 
-public class Word
+public class TriangleOne
 {
+	// instance variable word is declared
 	private String word;
+	
+	
 
-	public Word()
+	// default constructor
+	// SAME NAME AS THE CLASS and no return type
+	public TriangleOne()
 	{
+		word="";
 	}
 
-	public Word(String s)
-	{
-	}
 
-	public void setString(String s)
-	{
-	}
 
-	public char getFirstChar()
+	// initializer constructor 
+	// SAME NAME AS THE CLASS and no return type
+	// String variable s is created and receives a beginning value 
+	//    to store in our instance variable word
+	public TriangleOne(String s)
 	{
-		return 0;
-	}
+		setWord(s);
+	} // String variable s is erased or destroyed at the end of this constructor
+	
+	
 
-	public char getLastChar()
+	// modifier or setter method
+	// String variable s is created and receives a new value 
+	//    to store in our instance variable word
+	public void setWord(String s)
 	{
-		return 0;
-	}
+		word = s;
+	} // String variable s is erased or destroyed at the end of this method
 
-	public String getBackWards()
+
+
+
+	public void print( )
 	{
-		String back="";
-		return back;
-	}
-
- 	public String toString()
- 	{
- 		return "";
+		for ( int i = word.length(); i >= 0; i--)
+			System.out.println(word.substring(0,i));
 	}
 }
