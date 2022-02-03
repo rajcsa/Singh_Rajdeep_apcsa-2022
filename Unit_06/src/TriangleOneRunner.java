@@ -8,6 +8,9 @@ public class TriangleOneRunner
 {
 	public static void main ( String[] args )
 	{
-		//Can't do test cases on home computer but the class TriangleOne works as is		
+		TriangleOne obj = new TriangleOne("");
+		
+		obj.setWord("goravens");
+		obj.print();		
 	}
 }
