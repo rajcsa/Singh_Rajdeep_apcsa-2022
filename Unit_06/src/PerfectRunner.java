@@ -8,7 +8,7 @@ public class PerfectRunner
 {
 	public static void main( String args[] )
 	{
-		// N/A can't do test cases on home computer
+		// can't do test cases on home computer for this class (errors)
 																
 	}
 }
