@@ -7,7 +7,7 @@ public class LetterRemoverRunner
 	public static void main( String args[] )
 	{
 		// add test cases		
-		out.println("Lab Chapter 9 - #8  LetterRemover    2016");
+		out.println("Lab Chapter 9 - #8  LetterRemover");
 		out.println();
 		out.println();
 		
