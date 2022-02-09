@@ -1,6 +1,10 @@
-//(c) A+ Computer Science
-// www.apluscompsci.com
-//Name -  
+package net.sduhsd.royr6099.unit7;
+
+//© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class - 
+//Lab  -
 
 import static java.lang.System.*;
 
