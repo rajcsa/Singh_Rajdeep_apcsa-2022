@@ -20,7 +20,9 @@ public class RPSRunner
 			
 			//read in the player value
 		
-			RockPaperScissors game = new RockPaperScissors();		
+			RockPaperScissors game = new RockPaperScissors();
+		
+			out.print(game(player));
 	}
 }
 
