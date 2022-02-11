@@ -5,23 +5,18 @@
 
 public class RayOddToEven
 {
-	public static int go(int[] ray)
-	{
-		int first_odd = 0;
-		int first_even = 0;
-		
-		for (int c : ray) {
-			if (c%2==1) {
-				first_odd = c;
+	public static int go(int[] ray) {
+	    for (int i = 0; i < ray.length; i++) {
+		if (ray[i] % 2 != 0) {
+		    for (int j = i + 1; j < ray.length; j++) {
+			if (ray[j] % 2 == 0) {
+			    return j - i;
 			}
-			if ((c%2==0) && (first_even == 0)) {
-				first_even = c;
-				break;
-			}
-			
-			
-			
+		    }
+		    break;
 		}
-		return first_odd-first_even;
+	    }
+	    return -1;
 	}
+
 }
