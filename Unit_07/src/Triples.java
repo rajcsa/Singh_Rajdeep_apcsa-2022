@@ -1,4 +1,3 @@
-package net.sduhsd.royr6099.unit7;
 
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
